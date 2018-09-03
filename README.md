@@ -14,6 +14,8 @@ cd app-angularjs-example && npm install
 
 ```bash
 node server.js
+
+--------------------------
 http://localhost:8000
 ```
 
