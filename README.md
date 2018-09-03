@@ -1,5 +1,7 @@
 # App Example Angular JS
 
+[Migração para o Angular 5.](https://github.com/dejaneves/app-angularjs-migration)
+
 ## Clonando.
 
 ```bash
@@ -20,5 +22,3 @@ http://localhost:8000
 ```
 
 copie e cole o endereço no browser para rodar a aplicação.
-
-[Migração para o Angular 5.](https://github.com/dejaneves/app-angularjs-migration)
