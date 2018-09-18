@@ -5,7 +5,8 @@ angular
       .state({
         name: 'home',
         url: '/home',
-        templateUrl: 'pages/home.html'
+        templateUrl: 'pages/home.html',
+        controller: 'BooksController as vm'
       })
       .state({
         name: 'about',

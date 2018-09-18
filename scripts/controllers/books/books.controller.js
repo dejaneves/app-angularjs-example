@@ -5,14 +5,21 @@
     .module('app')
     .controller('BooksController', BooksController)
 
-  function BooksController () {
+  function BooksController (booksService) {
     var vm = this
 
-    vm.listAll = function () {
+    // _Methods
+    vm.listAll = listAll
+    vm.listById = listById
 
+    listAll()
+
+    function listAll () {
+      const books = booksService.listAll()
+      console.log(books)
     }
 
-    vm.listById = function (id) {
+    function listById (id) {
 
     }
   }
