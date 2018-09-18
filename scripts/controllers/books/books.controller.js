@@ -15,8 +15,7 @@
     listAll()
 
     function listAll () {
-      const books = booksService.listAll()
-      console.log(books)
+      vm.books = booksService.listAll()
     }
 
     function listById (id) {
