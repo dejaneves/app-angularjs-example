@@ -6,8 +6,10 @@
     .service('booksService', booksService)
 
   function booksService () {
+    this.books = []
+
     this.listAll = function () {
-      const books = [
+      this.books = [
         {
           isbn: '9781593275846',
           title: 'Eloquent JavaScript, Second Edition',
@@ -90,7 +92,13 @@
         }
       ]
 
-      return books
+      return this.books
+    }
+
+    this.lisByIsbn = function (isbn) {
+      return this.books.filter(function (book) {
+        return book.isbn === isbn
+      })
     }
   }
 })()

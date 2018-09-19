@@ -9,6 +9,12 @@ angular
         controller: 'BooksController as vm'
       })
       .state({
+        name: 'homeEdit',
+        url: '/home/:id',
+        templateUrl: 'pages/book-detail.html',
+        controller: 'BooksController as vm'
+      })
+      .state({
         name: 'about',
         url: '/about',
         templateUrl: 'pages/about.html'
