@@ -25,8 +25,7 @@
 
     function lisByIsbn (isbn) {
       var result = booksService.lisByIsbn(isbn)
-      console.log(result)
-      
+
       if (typeof result === 'undefined') {
         vm.options.showAlert = true
         vm.options.msgDanger = Messages.book().NOTFOUND
