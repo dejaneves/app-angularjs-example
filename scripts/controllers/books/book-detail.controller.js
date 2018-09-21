@@ -24,14 +24,14 @@
     }
 
     function lisByIsbn (isbn) {
-      console.log(isbn)
-      vm.book = booksService.lisByIsbn(isbn)
-
-      console.log(vm.book)
-
-      if (vm.book.length === 0) {
+      var result = booksService.lisByIsbn(isbn)
+      console.log(result)
+      
+      if (typeof result === 'undefined') {
         vm.options.showAlert = true
         vm.options.msgDanger = Messages.book().NOTFOUND
+      } else {
+        vm.book = result
       }
     }
   }
