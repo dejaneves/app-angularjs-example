@@ -1,4 +1,11 @@
-<div class="card-columns">
+<div class="alert alert-danger" role="alert" ng-if="vm.options.showAlert">
+  {{vm.options.msgDanger}}
+</div>
+<div ng-if="!vm.options.showAlert">
+  <h1>{{vm.book.title}}</h1>
+</div>
+
+<!-- <div class="card-columns">
   <div class="card" ng-repeat="book in vm.books">
     <div class="card-body">
       <h5 class="card-title">{{book.title}}</h5>
@@ -7,4 +14,4 @@
       <a href="{{book.website}}" class="card-link">Website</a>
     </div>
   </div>
-</div>
+</div> -->
