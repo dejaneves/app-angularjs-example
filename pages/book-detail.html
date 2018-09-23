@@ -1,0 +1,33 @@
+<div class="alert alert-danger" role="alert" ng-if="vm.options.showAlert">
+  {{vm.options.msgDanger}}
+</div>
+<div ng-if="!vm.options.showAlert">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item active" aria-current="page">
+        <a href="#!/home">  ‹  Back to results</a>
+      </li>
+    </ol>
+  </nav>
+  <div class="card">
+    <div class="card-body">
+      <h2>{{vm.book.title}}</h2>
+      <h4>{{vm.book.subtitle}}</h4>
+      <div>
+        <strong>Author:</strong> {{vm.book.author}}
+      </div>
+      <div>
+        <strong>Pages:</strong> {{vm.book.pages}}
+      </div>
+      <div>
+        <strong>Publisher:</strong> {{vm.book.publisher}}
+      </div>
+      <div>
+        <strong>ISBN:</strong> {{vm.book.isbn}}
+      </div>
+      <div>
+        <a href="{{vm.book.website}}" class="card-link">{{vm.book.website}}</a>
+      </div>
+    </div>
+  </div>
+</div>

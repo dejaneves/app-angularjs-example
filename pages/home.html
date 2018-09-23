@@ -1,4 +1,10 @@
-<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
- <h1 class="display-4">Página Home</h1>
- <p class="lead">Quickly build an effective pricing table for your potential customers with this Bootstrap example. It's built with default Bootstrap components and utilities with little customization.</p>
+<div class="card-columns">
+  <div class="card" ng-repeat="book in vm.books">
+    <div class="card-body">
+      <h5 class="card-title">{{book.title}}</h5>
+      <h6 class="card-subtitle mb-2 text-muted">{{book.author}}</h6>
+      <p class="card-text">{{book.subtitle}}</p>
+      <a href="#!/book/{{book.isbn}}" class="card-link">Detail</a>
+    </div>
+  </div>
 </div>

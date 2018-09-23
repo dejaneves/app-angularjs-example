@@ -10,17 +10,11 @@
 
     // _Methods
     vm.listAll = listAll
-    vm.listById = listById
 
     listAll()
 
     function listAll () {
-      const books = booksService.listAll()
-      console.log(books)
-    }
-
-    function listById (id) {
-
+      vm.books = booksService.listAll()
     }
   }
 })()
